@@ -315,10 +315,6 @@
                 padding: 0 15px;
             }
 
-            #bar-chart-1 {
-                height: 1800px;
-            }
-
             .chart-preview {
                 gap: 10px;
                 margin: 30px 0;
@@ -403,9 +399,6 @@
                 font-size: 0.9em;
             }
 
-            #bar-chart-1 {
-                height: 400px;
-            }
 
             .BarCharts h2, .LineGraphs h2 {
                 font-size: 1.5em;
@@ -490,21 +483,18 @@
             margin-bottom: 20px;
         }
         
-        #bar-chart-1 {
+        /* Make charts same size and responsive (include monthly-chart) */
+        #bar-chart-1, #hungary-chart, #monthly-chart {
             width: 100%;
-            height: 700px;
+            height: 100%;
             max-width: 100%;
             margin-bottom: 40px;
         }
         
-        /* Hungary population chart */
-        #hungary-chart {
-            width: 100%;
-            height: 700px;
-            max-width: 100%;
-            margin-bottom: 40px;
-        }
-        #hungary-chart svg {
+        /* Ensure SVGs fill their containers */
+        #bar-chart-1 svg,
+        #hungary-chart svg,
+        #monthly-chart svg {
             width: 100% !important;
             height: 100% !important;
             max-width: 100%;
@@ -513,20 +503,15 @@
         /* Fallback: hide Vega actions if present */
         .vega-actions { display: none !important; }
  
-        @media (max-width: 1024px) {
-            #hungary-chart { height: 500px; }
+        /* Responsive sizes: keep both charts identical across breakpoints */
+        @media (max-width: 1200px) {
+            #bar-chart-1, #hungary-chart, #monthly-chart { height: 700px; }
         }
         @media (max-width: 768px) {
-            #hungary-chart { height: 420px; }
+            #bar-chart-1, #hungary-chart, #monthly-chart { height: 560px; }
         }
         @media (max-width: 480px) {
-            #hungary-chart { height: 320px; }
-        }
-        
-        #bar-chart-1 svg {
-            width: 100% !important;
-            height: 100% !important;
-            max-width: 100%;
+            #bar-chart-1, #hungary-chart, #monthly-chart { height: 420px; }
         }
         
         /* Style tooltips for better visibility */
@@ -677,8 +662,9 @@
             </div>
             <div class="BarCharts">
                 <h2 id="bar-charts">Bar Charts</h2>
+                <div id="bar-chart-1"></div>
+                <div id="monthly-chart"></div>
             </div>
-            <div id="bar-chart-1"></div>
             <div class="LineGraphs">
                 <h2 id="line-graphs">Line Graphs</h2>
                 <div id="hungary-chart"></div>
@@ -801,7 +787,7 @@
                     "type": "ordinal",
                     "title": "Év",
                     "axis": {
-                        "labelAngle": 0,
+                        "labelAngle": 90,
                         "labelColor": "#fff",
                         "titleColor": "#00d4ff"
                     }
@@ -886,6 +872,7 @@
               {"Year": 2025, "Men": 4605666, "Women": 4933836}
             ]
           },
+          "title": "Magyarország teljes népessége, 1941–2025",
           "config": {
             "background": "transparent",
             "axis": {
@@ -902,24 +889,24 @@
             {
               "mark": {"type": "line", "point": true},
               "encoding": {
-                "x": {"field": "Year", "type": "ordinal", "title": "Year"},
-                "y": {"field": "Men", "type": "quantitative", "title": "Population"},
+                "x": {"field": "Year", "type": "ordinal", "title": "Év"},
+                "y": {"field": "Men", "type": "quantitative", "title": "Népesség(fő)"},
                 "color": {"value": "steelblue"},
                 "tooltip": [
                   {"field": "Year"},
-                  {"field": "Men", "title": "Men"}
+                  {"field": "Men", "title": "Férfiak"}
                 ]
               }
             },
             {
               "mark": {"type": "line", "point": true},
               "encoding": {
-                "x": {"field": "Year", "type": "ordinal", "title": "Year"},
-                "y": {"field": "Women", "type": "quantitative", "title": "Population"},
+                "x": {"field": "Year", "type": "ordinal", "title": "Év"},
+                "y": {"field": "Women", "type": "quantitative", "title": "Népesség(fő)"},
                 "color": {"value": "darkorange"},
                 "tooltip": [
                   {"field": "Year"},
-                  {"field": "Women", "title": "Women"}
+                  {"field": "Women", "title": "Nők"}
                 ]
               }
             }
@@ -932,6 +919,89 @@
             renderer: 'svg',
             theme: 'dark'
         }).catch(console.error);
+        
+        // Monthly data (source for #monthly-chart)
+        const monthlyData = [
+            { Month: "October 2025", Peak: 41666455, InGamePeak: 13027299 },
+            { Month: "September 2025", Peak: 40522969, InGamePeak: 12419706 },
+            { Month: "August 2025", Peak: 38805229, InGamePeak: 11704046 },
+            { Month: "July 2025", Peak: 38821393, InGamePeak: 12003805 },
+            { Month: "June 2025", Peak: 40079662, InGamePeak: 12024028 },
+            { Month: "May 2025", Peak: 39979623, InGamePeak: 11793419 },
+            { Month: "April 2025", Peak: 40490922, InGamePeak: 12514434 },
+            { Month: "March 2025", Peak: 41239880, InGamePeak: 13194690 },
+            { Month: "February 2025", Peak: 39924077, InGamePeak: 12288438 },
+            { Month: "January 2025", Peak: 39342021, InGamePeak: 12485275 },
+            // { Month: "December 2024", Peak: 39319632, InGamePeak: 12517653 },
+            // { Month: "November 2024", Peak: 38271280, InGamePeak: 11847847 },
+            // { Month: "October 2024", Peak: 38104203, InGamePeak: 11921071 },
+            // { Month: "September 2024", Peak: 38367277, InGamePeak: 12270218 },
+            // { Month: "August 2024", Peak: 37266324, InGamePeak: 12534703 },
+            // { Month: "July 2024", Peak: 36609032, InGamePeak: 11660464 },
+            // { Month: "June 2024", Peak: 36928521, InGamePeak: 11711482 },
+            // { Month: "May 2024", Peak: 35552327, InGamePeak: 11135460 },
+            // { Month: "April 2024", Peak: 36300119, InGamePeak: 11594618 },
+            // { Month: "March 2024", Peak: 36354393, InGamePeak: 11795523 },
+            // { Month: "February 2024", Peak: 33393132, InGamePeak: 11119656 },
+            // { Month: "January 2024", Peak: 33675229, InGamePeak: 11582167 },
+            // { Month: "December 2023", Peak: 32669308, InGamePeak: 10499708 },
+            // { Month: "November 2023", Peak: 32102622, InGamePeak: 9873463 },
+            // { Month: "October 2023", Peak: 31364841, InGamePeak: 9941150 },
+            // { Month: "September 2023", Peak: 31272321, InGamePeak: 9966162 },
+            // { Month: "August 2023", Peak: 29888596, InGamePeak: 9713667 },
+            // { Month: "July 2023", Peak: 30341729, InGamePeak: 9110225 },
+            // { Month: "June 2023", Peak: 32159998, InGamePeak: 8917565 },
+            // { Month: "May 2023", Peak: 32262022, InGamePeak: 9533835 },
+            // { Month: "April 2023", Peak: 33397566, InGamePeak: 9903896 },
+            // { Month: "March 2023", Peak: 33598520, InGamePeak: 10130965 },
+            // { Month: "February 2023", Peak: 33159010, InGamePeak: 10143376 },
+            // { Month: "January 2023", Peak: 33078963, InGamePeak: 10284568 },
+        ];
+        
+         const monthlySpec = {
+             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+             "description": "Havi játékosok bontása",
+             "data": { "values": monthlyData },
+             "transform": [
+                 { "fold": ["Peak", "InGamePeak"], "as": ["metric", "value"] }
+             ],
+             "mark": { "type": "bar" },
+             "encoding": {
+                 "x": {
+                     "field": "Month",
+                     "type": "ordinal",
+                     "title": "Hónap",
+                     "axis": { "labelAngle": -45, "labelColor": "#fff", "titleColor": "#00d4ff" },
+                     "sort": null
+                 },
+                 "y": {
+                     "field": "value",
+                     "type": "quantitative",
+                     "title": "Játékosok száma",
+                     "axis": { "labelColor": "#fff", "titleColor": "#00d4ff", "format": "," }
+                 },
+                 "color": {
+                     "field": "metric",
+                     "type": "nominal",
+                     "scale": { "domain": ["Peak", "InGamePeak"], "range": ["#00d4ff", "#ffb86b"] },
+                     "legend": { "title": "Metrika" }
+                 },
+                 "tooltip": [
+                     { "field": "Month", "type": "ordinal", "title": "Hónap" },
+                     { "field": "metric", "type": "nominal", "title": "Metrika" },
+                     { "field": "value", "type": "quantitative", "title": "Érték", "format": "," }
+                 ],
+                 "xOffset": { "field": "metric" }
+             },
+             "title": "Havi játékosok bontása",
+             "config": {
+                 "background": "transparent",
+                 "axis": { "gridColor": "#333", "domainColor": "#666", "labelColor": "#fff", "titleColor": "#00d4ff" },
+                 "tooltip": { "theme": "dark" }
+             }
+         };
+         
+         vegaEmbed('#monthly-chart', monthlySpec, { actions: false, renderer: 'svg', theme: 'dark' }).catch(console.error);
     </script>
 </body>
 </html>
