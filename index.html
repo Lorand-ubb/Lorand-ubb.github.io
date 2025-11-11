@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <style>
+       <style>
         * {
             margin: 0;
             padding: 0;
@@ -59,10 +59,6 @@
 
         .nav-links a:hover {
             color: #00d4ff;
-        }
-
-        .nav-links li {
-            list-style: none;
         }
 
         .menu-toggle {
@@ -213,225 +209,6 @@
             background: rgba(0, 0, 0, 0.3);
         }
 
-        /* Mobile Menu Styles */
-        .nav-links.active {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            gap: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-links.active li {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-links.active li:last-child {
-            border-bottom: none;
-        }
-
-        .nav-links.active a {
-            padding: 15px 0;
-            font-size: 1.1em;
-        }
-
-        /* Tablet and below */
-        @media (max-width: 1024px) {
-            .hero {
-                padding: 120px 20px 50px;
-            }
-
-            .features {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
-            }
-        }
-
-        /* Mobile devices */
-        @media (max-width: 768px) {
-            .header {
-                padding: 12px 15px;
-            }
-
-            .logo {
-                font-size: 1em;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .hero {
-                padding: 100px 15px 30px;
-                min-height: auto;
-            }
-
-            .hero-content {
-                max-width: 100%;
-            }
-
-            .tagline {
-                font-size: 1.1em;
-                margin-bottom: 30px;
-            }
-
-            .description {
-                font-size: 0.95em;
-                margin-bottom: 30px;
-                padding: 0 5px;
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-                gap: 15px;
-                margin-top: 30px;
-            }
-
-            .feature-card {
-                padding: 20px;
-            }
-
-            .feature-icon {
-                font-size: 2.5em;
-            }
-
-            .BarCharts, .LineGraphs {
-                gap: 20px;
-                padding: 0 15px;
-            }
-
-            .chart-preview {
-                gap: 10px;
-                margin: 30px 0;
-            }
-
-            .preview-item {
-                width: 60px;
-                height: 60px;
-            }
-
-            .btn {
-                padding: 10px 25px;
-                margin: 5px;
-                display: block;
-                width: fit-content;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .modal-content {
-                width: 95%;
-                margin: 10% auto;
-                padding: 15px;
-            }
-
-            .close {
-                font-size: 1.5em;
-                right: 15px;
-                top: 5px;
-            }
-
-            .chart-title {
-                font-size: 1.2em;
-            }
-
-            #modal-chart {
-                min-height: 300px;
-                max-height: 60vh;
-            }
-
-            .modal-body {
-                padding: 15px 0;
-                min-height: 250px;
-            }
-
-            section#about {
-                padding: 50px 15px;
-            }
-
-            section#about h2 {
-                font-size: 2em;
-            }
-
-            section#about p {
-                font-size: 1em;
-            }
-        }
-
-        /* Small mobile devices */
-        @media (max-width: 480px) {
-            .header {
-                padding: 10px 12px;
-            }
-
-            .logo {
-                font-size: 0.9em;
-            }
-
-            .hero {
-                padding: 80px 10px 20px;
-            }
-
-            .feature-card {
-                padding: 15px;
-            }
-
-            .feature-card h3 {
-                font-size: 1.1em;
-            }
-
-            .feature-card p {
-                font-size: 0.9em;
-            }
-
-
-            .BarCharts h2, .LineGraphs h2 {
-                font-size: 1.5em;
-            }
-
-            .modal-content {
-                width: 98%;
-                padding: 12px;
-                margin: 5% auto;
-            }
-
-            #modal-chart {
-                min-height: 250px;
-                max-height: 50vh;
-            }
-
-            .modal-body {
-                padding: 10px 0;
-                min-height: 200px;
-            }
-        }
-
-        /* Large desktop */
-        @media (min-width: 1200px) {
-            .header {
-                padding: 20px 50px;
-            }
-
-            .logo {
-                font-size: 1.5em;
-            }
-        }
-
         .chart-preview {
             display: flex;
             justify-content: center;
@@ -457,12 +234,8 @@
         }
 
         @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
 
         .BarCharts, .LineGraphs {
@@ -482,136 +255,33 @@
             font-size: clamp(1.5em, 3vw, 2em);
             margin-bottom: 20px;
         }
-        
-        /* Make charts same size and responsive (include monthly-chart) */
-        #bar-chart-1, #hungary-chart, #monthly-chart {
-            width: 100%;
-            height: 100%;
-            max-width: 100%;
-            margin-bottom: 40px;
-        }
-        
-        /* Ensure SVGs fill their containers */
-        #bar-chart-1 svg,
-        #hungary-chart svg,
-        #monthly-chart svg {
-            width: 100% !important;
-            height: 100% !important;
-            max-width: 100%;
-            display: block;
-        }
-        /* Fallback: hide Vega actions if present */
-        .vega-actions { display: none !important; }
- 
-        /* Responsive sizes: keep both charts identical across breakpoints */
-        @media (max-width: 1200px) {
-            #bar-chart-1, #hungary-chart, #monthly-chart { height: 700px; }
-        }
-        @media (max-width: 768px) {
-            #bar-chart-1, #hungary-chart, #monthly-chart { height: 560px; }
-        }
-        @media (max-width: 480px) {
-            #bar-chart-1, #hungary-chart, #monthly-chart { height: 420px; }
-        }
-        
-        /* Style tooltips for better visibility */
-        .vega-tooltip {
-            background: rgba(26, 26, 46, 0.95) !important;
-            border: 1px solid #00d4ff !important;
-            border-radius: 8px !important;
-            color: #fff !important;
-            font-size: 0.9em !important;
-            padding: 8px 12px !important;
-        }
-        
-        .vega-tooltip table {
-            margin: 0 !important;
-        }
-        
-        .vega-tooltip td {
-            padding: 4px 8px !important;
-        }
-        
-        .vega-tooltip .value {
-            color: #00d4ff !important;
-            font-weight: bold !important;
+
+        /* === Reduced spacing adjustments === */
+        h1, h2, h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        #modal-chart {
-            width: 100%;
-            min-height: 400px;
-            max-width: 100%;
+        .hero {
+            padding: 60px 20px 40px;
         }
 
-        #modal-chart svg {
-            width: 100% !important;
-            height: 100% !important;
-            max-width: 100%;
+        .BarCharts, .LineGraphs {
+            margin-top: 20px;
         }
 
-        /* Modal styling */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            animation: fadeIn 0.3s;
+        .BarCharts h2, .LineGraphs h2 {
+            margin-bottom: 10px;
         }
 
-        .modal-content {
-            background: #1a1a2e;
-            margin: 5% auto;
-            padding: 20px;
-            border: 2px solid #00d4ff;
-            border-radius: 20px;
-            width: 90%;
-            max-width: 800px;
-            position: relative;
-            animation: scaleIn 0.3s;
-            max-height: 90vh;
-            overflow-y: auto;
+        section#about {
+            padding: 60px 20px;
         }
 
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.5);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
+        section#about h2 {
+            margin-bottom: 15px;
         }
 
-        .close {
-            color: #00d4ff;
-            float: right;
-            font-size: 2em;
-            font-weight: bold;
-            cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-        }
-
-        .close:hover {
-            color: #fff;
-        }
-
-        .modal-body {
-            padding: 20px 0;
-            min-height: 300px;
-        }
-
-        .chart-title {
-            color: #00d4ff;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
@@ -661,18 +331,22 @@
                 </div>
             </div>
             <div class="BarCharts">
-                <h2 id="bar-charts">Bar Charts</h2>
-                <div id="bar-chart-1"></div>
-                <div id="monthly-chart"></div>
+                <h2 id="bar-charts">Total population of Romania (2003–2025)</h2>
+                <div id="bar-chart-1" ></div>
             </div>
             <div class="LineGraphs">
-                <h2 id="line-graphs">Line Graphs</h2>
-                <div id="hungary-chart"></div>
+                <h2 id="line-graphs">Population of Hungary by gender from 1941 to 2025</h2>
+                <div id="hungary-chart" ></div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" style="padding: 100px 20px; text-align: center; max-width: 800px; margin: 0 auto;">
+            
+            <div class="LineGraphs">
+                <h2>Price-to-Income Ratio</h2>
+                <div id="price-income-chart" ></div>
+            </div>
+         </div>
+     </section>
+ 
+     <section id="about" style="padding: 100px 20px; text-align: center; max-width: 800px; margin: 0 auto;">
         <h2 style="font-size: 2.5em; margin-bottom: 30px; color: #00d4ff;">About Us</h2>
         <p style="font-size: 1.2em; line-height: 1.8; color: #ccc;">
             We are dedicated to helping you visualize your data in meaningful ways. Our platform provides 
@@ -749,32 +423,32 @@
         // Bar chart specification with dark theme colors
         const barChartSpec = {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "description": "Románia teljes népessége (2003–2025)",
+            "description": "Total population of Romania (2003–2025)",
             "data": {
                 "values": [
-                    {"Ev": 2003, "Nepesseg": 21627509},
-                    {"Ev": 2004, "Nepesseg": 21521142},
-                    {"Ev": 2005, "Nepesseg": 21382354},
-                    {"Ev": 2006, "Nepesseg": 21257016},
-                    {"Ev": 2007, "Nepesseg": 21130503},
-                    {"Ev": 2008, "Nepesseg": 20635460},
-                    {"Ev": 2009, "Nepesseg": 20440290},
-                    {"Ev": 2010, "Nepesseg": 20294683},
-                    {"Ev": 2011, "Nepesseg": 20199059},
-                    {"Ev": 2012, "Nepesseg": 20095996},
-                    {"Ev": 2013, "Nepesseg": 20020074},
-                    {"Ev": 2014, "Nepesseg": 19953089},
-                    {"Ev": 2015, "Nepesseg": 19875542},
-                    {"Ev": 2016, "Nepesseg": 19760585},
-                    {"Ev": 2017, "Nepesseg": 19643949},
-                    {"Ev": 2018, "Nepesseg": 19533481},
-                    {"Ev": 2019, "Nepesseg": 19425873},
-                    {"Ev": 2020, "Nepesseg": 19354339},
-                    {"Ev": 2021, "Nepesseg": 19229519},
-                    {"Ev": 2022, "Nepesseg": 19043098},
-                    {"Ev": 2023, "Nepesseg": 19055228},
-                    {"Ev": 2024, "Nepesseg": 19067576},
-                    {"Ev": 2025, "Nepesseg": 19036031}
+                {"Year": 2003, "Population": 21627509},
+                {"Year": 2004, "Population": 21521142},
+                {"Year": 2005, "Population": 21382354},
+                {"Year": 2006, "Population": 21257016},
+                {"Year": 2007, "Population": 21130503},
+                {"Year": 2008, "Population": 20635460},
+                {"Year": 2009, "Population": 20440290},
+                {"Year": 2010, "Population": 20294683},
+                {"Year": 2011, "Population": 20199059},
+                {"Year": 2012, "Population": 20095996},
+                {"Year": 2013, "Population": 20020074},
+                {"Year": 2014, "Population": 19953089},
+                {"Year": 2015, "Population": 19875542},
+                {"Year": 2016, "Population": 19760585},
+                {"Year": 2017, "Population": 19643949},
+                {"Year": 2018, "Population": 19533481},
+                {"Year": 2019, "Population": 19425873},
+                {"Year": 2020, "Population": 19354339},
+                {"Year": 2021, "Population": 19229519},
+                {"Year": 2022, "Population": 19043098},
+                {"Year": 2023, "Population": 19055228},
+                {"Year": 2024, "Population": 19067576},
+                {"Year": 2025, "Population": 19036031}
                 ]
             },
             "mark": {
@@ -783,47 +457,48 @@
             },
             "encoding": {
                 "x": {
-                    "field": "Ev",
-                    "type": "ordinal",
-                    "title": "Év",
-                    "axis": {
-                        "labelAngle": 90,
-                        "labelColor": "#fff",
-                        "titleColor": "#00d4ff"
-                    }
+                "field": "Year",
+                "type": "ordinal",
+                "title": "Year",
+                "axis": {
+                    "labelAngle": 90,
+                    "labelColor": "#fff",
+                    "titleColor": "#00d4ff"
+                }
                 },
                 "y": {
-                    "field": "Nepesseg",
-                    "type": "quantitative",
-                    "title": "Népesség (fő)",
-                    "axis": {
-                        "labelColor": "#fff",
-                        "titleColor": "#00d4ff",
-                        "format": ",.0f"
-                    }
+                "field": "Population",
+                "type": "quantitative",
+                "title": "Population (people)",
+                "axis": {
+                    "labelColor": "#fff",
+                    "titleColor": "#00d4ff",
+                    "format": ",.0f"
+                }
                 },
                 "tooltip": [
-                    {"field": "Ev", "type": "ordinal", "title": "Év", "format": ""},
-                    {"field": "Nepesseg", "type": "quantitative", "title": "Népesség", "format": ",.0f"}
+                {"field": "Year", "type": "ordinal", "title": "Year"},
+                {"field": "Population", "type": "quantitative", "title": "Population", "format": ",.0f"}
                 ]
             },
-            "title": "Románia teljes népessége, 2003–2025",
+            "title": "Total Population of Romania, 2003–2025",
             "config": {
                 "background": "transparent",
                 "axis": {
-                    "gridColor": "#333",
-                    "domainColor": "#666",
-                    "labelColor": "#fff",
-                    "titleColor": "#00d4ff"
+                "gridColor": "#333",
+                "domainColor": "#666",
+                "labelColor": "#fff",
+                "titleColor": "#00d4ff"
                 },
                 "text": {"color": "#fff"},
                 "title": {"color": "#00d4ff"},
                 "mark": {"color": "#00d4ff"},
                 "tooltip": {
-                    "theme": "dark"
+                "theme": "dark"
                 }
             }
         };
+
 
         // Render the bar chart with compact actions menu
         vegaEmbed('#bar-chart-1', barChartSpec, {
@@ -834,84 +509,85 @@
         
         // Hungary population spec (imported)
         const hungarySpec = {
-          "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-          "description": "Population of Hungary by gender from 1941 to 2025",
-          "autosize": { "type": "fit", "contains": "padding" },
-          "data": {
-            "values": [
-              {"Year": 1941, "Men": 4560875, "Women": 4755199},
-              {"Year": 1949, "Men": 4423420, "Women": 4781379},
-              {"Year": 1960, "Men": 4804043, "Women": 5157001},
-              {"Year": 1970, "Men": 5003651, "Women": 5318448},
-              {"Year": 1980, "Men": 5188709, "Women": 5520754},
-              {"Year": 1990, "Men": 4984904, "Women": 5389919},
-              {"Year": 2001, "Men": 4851012, "Women": 5349286},
-              {"Year": 2002, "Men": 4836980, "Women": 5337873},
-              {"Year": 2003, "Men": 4818456, "Women": 5323906},
-              {"Year": 2004, "Men": 4804113, "Women": 5312629},
-              {"Year": 2005, "Men": 4793115, "Women": 5304434},
-              {"Year": 2006, "Men": 4784579, "Women": 5292002},
-              {"Year": 2007, "Men": 4779078, "Women": 5287080},
-              {"Year": 2008, "Men": 4769562, "Women": 5275839},
-              {"Year": 2009, "Men": 4763050, "Women": 5267925},
-              {"Year": 2010, "Men": 4756900, "Women": 5257424},
-              {"Year": 2011, "Men": 4743901, "Women": 5241821},
-              {"Year": 2012, "Men": 4724666, "Women": 5207259},
-              {"Year": 2013, "Men": 4713025, "Women": 5182225},
-              {"Year": 2014, "Men": 4697447, "Women": 5152770},
-              {"Year": 2015, "Men": 4687436, "Women": 5128422},
-              {"Year": 2016, "Men": 4678478, "Women": 5101174},
-              {"Year": 2017, "Men": 4663753, "Women": 5076104},
-              {"Year": 2018, "Men": 4658683, "Women": 5054972},
-              {"Year": 2019, "Men": 4660856, "Women": 5039416},
-              {"Year": 2020, "Men": 4663876, "Women": 5025500},
-              {"Year": 2021, "Men": 4647359, "Women": 5004102},
-              {"Year": 2022, "Men": 4628875, "Women": 4981528},
-              {"Year": 2023, "Men": 4625260, "Women": 4974484},
-              {"Year": 2024, "Men": 4623378, "Women": 4961249},
-              {"Year": 2025, "Men": 4605666, "Women": 4933836}
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "Population of Hungary by gender from 1941 to 2025",
+            "autosize": { "type": "fit", "contains": "padding" },
+            "data": {
+                "values": [
+                {"Year": 1941, "Men": 4560875, "Women": 4755199},
+                {"Year": 1949, "Men": 4423420, "Women": 4781379},
+                {"Year": 1960, "Men": 4804043, "Women": 5157001},
+                {"Year": 1970, "Men": 5003651, "Women": 5318448},
+                {"Year": 1980, "Men": 5188709, "Women": 5520754},
+                {"Year": 1990, "Men": 4984904, "Women": 5389919},
+                {"Year": 2001, "Men": 4851012, "Women": 5349286},
+                {"Year": 2002, "Men": 4836980, "Women": 5337873},
+                {"Year": 2003, "Men": 4818456, "Women": 5323906},
+                {"Year": 2004, "Men": 4804113, "Women": 5312629},
+                {"Year": 2005, "Men": 4793115, "Women": 5304434},
+                {"Year": 2006, "Men": 4784579, "Women": 5292002},
+                {"Year": 2007, "Men": 4779078, "Women": 5287080},
+                {"Year": 2008, "Men": 4769562, "Women": 5275839},
+                {"Year": 2009, "Men": 4763050, "Women": 5267925},
+                {"Year": 2010, "Men": 4756900, "Women": 5257424},
+                {"Year": 2011, "Men": 4743901, "Women": 5241821},
+                {"Year": 2012, "Men": 4724666, "Women": 5207259},
+                {"Year": 2013, "Men": 4713025, "Women": 5182225},
+                {"Year": 2014, "Men": 4697447, "Women": 5152770},
+                {"Year": 2015, "Men": 4687436, "Women": 5128422},
+                {"Year": 2016, "Men": 4678478, "Women": 5101174},
+                {"Year": 2017, "Men": 4663753, "Women": 5076104},
+                {"Year": 2018, "Men": 4658683, "Women": 5054972},
+                {"Year": 2019, "Men": 4660856, "Women": 5039416},
+                {"Year": 2020, "Men": 4663876, "Women": 5025500},
+                {"Year": 2021, "Men": 4647359, "Women": 5004102},
+                {"Year": 2022, "Men": 4628875, "Women": 4981528},
+                {"Year": 2023, "Men": 4625260, "Women": 4974484},
+                {"Year": 2024, "Men": 4623378, "Women": 4961249},
+                {"Year": 2025, "Men": 4605666, "Women": 4933836}
+                ]
+            },
+            "title": "Total Population of Hungary, 1941–2025",
+            "config": {
+                "background": "transparent",
+                "axis": {
+                "gridColor": "#333",
+                "domainColor": "#666",
+                "labelColor": "#fff",
+                "titleColor": "#00d4ff"
+                },
+                "text": {"color": "#fff"},
+                "title": {"color": "#00d4ff"},
+                "tooltip": {"theme": "dark"}
+            },
+            "layer": [
+                {
+                "mark": {"type": "line", "point": true},
+                "encoding": {
+                    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+                    "y": {"field": "Men", "type": "quantitative", "title": "Population (people)"},
+                    "color": {"value": "steelblue"},
+                    "tooltip": [
+                    {"field": "Year", "title": "Year"},
+                    {"field": "Men", "title": "Men"}
+                    ]
+                }
+                },
+                {
+                "mark": {"type": "line", "point": true},
+                "encoding": {
+                    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+                    "y": {"field": "Women", "type": "quantitative", "title": "Population (people)"},
+                    "color": {"value": "darkorange"},
+                    "tooltip": [
+                    {"field": "Year", "title": "Year"},
+                    {"field": "Women", "title": "Women"}
+                    ]
+                }
+                }
             ]
-          },
-          "title": "Magyarország teljes népessége, 1941–2025",
-          "config": {
-            "background": "transparent",
-            "axis": {
-              "gridColor": "#333",
-              "domainColor": "#666",
-              "labelColor": "#fff",
-              "titleColor": "#00d4ff"
-            },
-            "text": {"color": "#fff"},
-            "title": {"color": "#00d4ff"},
-            "tooltip": {"theme": "dark"}
-          },
-          "layer": [
-            {
-              "mark": {"type": "line", "point": true},
-              "encoding": {
-                "x": {"field": "Year", "type": "ordinal", "title": "Év"},
-                "y": {"field": "Men", "type": "quantitative", "title": "Népesség(fő)"},
-                "color": {"value": "steelblue"},
-                "tooltip": [
-                  {"field": "Year"},
-                  {"field": "Men", "title": "Férfiak"}
-                ]
-              }
-            },
-            {
-              "mark": {"type": "line", "point": true},
-              "encoding": {
-                "x": {"field": "Year", "type": "ordinal", "title": "Év"},
-                "y": {"field": "Women", "type": "quantitative", "title": "Népesség(fő)"},
-                "color": {"value": "darkorange"},
-                "tooltip": [
-                  {"field": "Year"},
-                  {"field": "Women", "title": "Nők"}
-                ]
-              }
-            }
-          ]
         };
+
         
         // Render the Hungary population chart (responsive, same dark config)
         vegaEmbed('#hungary-chart', hungarySpec, {
@@ -920,88 +596,475 @@
             theme: 'dark'
         }).catch(console.error);
         
-        // Monthly data (source for #monthly-chart)
-        const monthlyData = [
-            { Month: "October 2025", Peak: 41666455, InGamePeak: 13027299 },
-            { Month: "September 2025", Peak: 40522969, InGamePeak: 12419706 },
-            { Month: "August 2025", Peak: 38805229, InGamePeak: 11704046 },
-            { Month: "July 2025", Peak: 38821393, InGamePeak: 12003805 },
-            { Month: "June 2025", Peak: 40079662, InGamePeak: 12024028 },
-            { Month: "May 2025", Peak: 39979623, InGamePeak: 11793419 },
-            { Month: "April 2025", Peak: 40490922, InGamePeak: 12514434 },
-            { Month: "March 2025", Peak: 41239880, InGamePeak: 13194690 },
-            { Month: "February 2025", Peak: 39924077, InGamePeak: 12288438 },
-            { Month: "January 2025", Peak: 39342021, InGamePeak: 12485275 },
-            // { Month: "December 2024", Peak: 39319632, InGamePeak: 12517653 },
-            // { Month: "November 2024", Peak: 38271280, InGamePeak: 11847847 },
-            // { Month: "October 2024", Peak: 38104203, InGamePeak: 11921071 },
-            // { Month: "September 2024", Peak: 38367277, InGamePeak: 12270218 },
-            // { Month: "August 2024", Peak: 37266324, InGamePeak: 12534703 },
-            // { Month: "July 2024", Peak: 36609032, InGamePeak: 11660464 },
-            // { Month: "June 2024", Peak: 36928521, InGamePeak: 11711482 },
-            // { Month: "May 2024", Peak: 35552327, InGamePeak: 11135460 },
-            // { Month: "April 2024", Peak: 36300119, InGamePeak: 11594618 },
-            // { Month: "March 2024", Peak: 36354393, InGamePeak: 11795523 },
-            // { Month: "February 2024", Peak: 33393132, InGamePeak: 11119656 },
-            // { Month: "January 2024", Peak: 33675229, InGamePeak: 11582167 },
-            // { Month: "December 2023", Peak: 32669308, InGamePeak: 10499708 },
-            // { Month: "November 2023", Peak: 32102622, InGamePeak: 9873463 },
-            // { Month: "October 2023", Peak: 31364841, InGamePeak: 9941150 },
-            // { Month: "September 2023", Peak: 31272321, InGamePeak: 9966162 },
-            // { Month: "August 2023", Peak: 29888596, InGamePeak: 9713667 },
-            // { Month: "July 2023", Peak: 30341729, InGamePeak: 9110225 },
-            // { Month: "June 2023", Peak: 32159998, InGamePeak: 8917565 },
-            // { Month: "May 2023", Peak: 32262022, InGamePeak: 9533835 },
-            // { Month: "April 2023", Peak: 33397566, InGamePeak: 9903896 },
-            // { Month: "March 2023", Peak: 33598520, InGamePeak: 10130965 },
-            // { Month: "February 2023", Peak: 33159010, InGamePeak: 10143376 },
-            // { Month: "January 2023", Peak: 33078963, InGamePeak: 10284568 },
-        ];
         
-         const monthlySpec = {
-             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-             "description": "Havi játékosok bontása",
-             "data": { "values": monthlyData },
-             "transform": [
-                 { "fold": ["Peak", "InGamePeak"], "as": ["metric", "value"] }
-             ],
-             "mark": { "type": "bar" },
-             "encoding": {
-                 "x": {
-                     "field": "Month",
-                     "type": "ordinal",
-                     "title": "Hónap",
-                     "axis": { "labelAngle": -45, "labelColor": "#fff", "titleColor": "#00d4ff" },
-                     "sort": null
-                 },
-                 "y": {
-                     "field": "value",
-                     "type": "quantitative",
-                     "title": "Játékosok száma",
-                     "axis": { "labelColor": "#fff", "titleColor": "#00d4ff", "format": "," }
-                 },
-                 "color": {
-                     "field": "metric",
-                     "type": "nominal",
-                     "scale": { "domain": ["Peak", "InGamePeak"], "range": ["#00d4ff", "#ffb86b"] },
-                     "legend": { "title": "Metrika" }
-                 },
-                 "tooltip": [
-                     { "field": "Month", "type": "ordinal", "title": "Hónap" },
-                     { "field": "metric", "type": "nominal", "title": "Metrika" },
-                     { "field": "value", "type": "quantitative", "title": "Érték", "format": "," }
-                 ],
-                 "xOffset": { "field": "metric" }
-             },
-             "title": "Havi játékosok bontása",
-             "config": {
-                 "background": "transparent",
-                 "axis": { "gridColor": "#333", "domainColor": "#666", "labelColor": "#fff", "titleColor": "#00d4ff" },
-                 "tooltip": { "theme": "dark" }
-             }
-         };
-         
-         vegaEmbed('#monthly-chart', monthlySpec, { actions: false, renderer: 'svg', theme: 'dark' }).catch(console.error);
+        // Price-to-Income Ratio data (2000–2024, EU countries)
+        const priceIncomeData = [
+            { Year: 2000, Country: "Austria", Ratio: 86.02 },
+            { Year: 2001, Country: "Austria", Ratio: 85.83 },
+            { Year: 2002, Country: "Austria", Ratio: 85.08 },
+            { Year: 2003, Country: "Austria", Ratio: 82.51 },
+            { Year: 2004, Country: "Austria", Ratio: 78.99 },
+            { Year: 2005, Country: "Austria", Ratio: 85.87 },
+            { Year: 2006, Country: "Austria", Ratio: 85.37 },
+            { Year: 2007, Country: "Austria", Ratio: 84.89 },
+            { Year: 2008, Country: "Austria", Ratio: 83.25 },
+            { Year: 2009, Country: "Austria", Ratio: 83.19 },
+            { Year: 2010, Country: "Austria", Ratio: 83.76 },
+            { Year: 2011, Country: "Austria", Ratio: 87.11 },
+            { Year: 2012, Country: "Austria", Ratio: 89.25 },
+            { Year: 2013, Country: "Austria", Ratio: 94.21 },
+            { Year: 2014, Country: "Austria", Ratio: 96.04 },
+            { Year: 2015, Country: "Austria", Ratio: 100 },
+            { Year: 2016, Country: "Austria", Ratio: 103.89 },
+            { Year: 2017, Country: "Austria", Ratio: 106.92 },
+            { Year: 2018, Country: "Austria", Ratio: 109.83 },
+            { Year: 2019, Country: "Austria", Ratio: 114.07 },
+            { Year: 2020, Country: "Austria", Ratio: 121.91 },
+            { Year: 2021, Country: "Austria", Ratio: 128.75 },
+            { Year: 2022, Country: "Austria", Ratio: 132.93 },
+            { Year: 2023, Country: "Austria", Ratio: 121.77 },
+            { Year: 2024, Country: "Austria", Ratio: 113.29 },
+            { Year: 2000, Country: "Belgium", Ratio: 71.54 },
+            { Year: 2001, Country: "Belgium", Ratio: 71.85 },
+            { Year: 2002, Country: "Belgium", Ratio: 75.11 },
+            { Year: 2003, Country: "Belgium", Ratio: 78.82 },
+            { Year: 2004, Country: "Belgium", Ratio: 83.63 },
+            { Year: 2005, Country: "Belgium", Ratio: 91.59 },
+            { Year: 2006, Country: "Belgium", Ratio: 96.17 },
+            { Year: 2007, Country: "Belgium", Ratio: 99.29 },
+            { Year: 2008, Country: "Belgium", Ratio: 98.47 },
+            { Year: 2009, Country: "Belgium", Ratio: 97.06 },
+            { Year: 2010, Country: "Belgium", Ratio: 98.45 },
+            { Year: 2011, Country: "Belgium", Ratio: 99.58 },
+            { Year: 2012, Country: "Belgium", Ratio: 99.67 },
+            { Year: 2013, Country: "Belgium", Ratio: 100.27 },
+            { Year: 2014, Country: "Belgium", Ratio: 98.9 },
+            { Year: 2015, Country: "Belgium", Ratio: 100 },
+            { Year: 2016, Country: "Belgium", Ratio: 99.89 },
+            { Year: 2017, Country: "Belgium", Ratio: 100.21 },
+            { Year: 2018, Country: "Belgium", Ratio: 100.24 },
+            { Year: 2019, Country: "Belgium", Ratio: 100.39 },
+            { Year: 2020, Country: "Belgium", Ratio: 103.29 },
+            { Year: 2021, Country: "Belgium", Ratio: 104.36 },
+            { Year: 2022, Country: "Belgium", Ratio: 101.34 },
+            { Year: 2023, Country: "Belgium", Ratio: 96.43 },
+            { Year: 2024, Country: "Belgium", Ratio: 96.9 },
+            { Year: 2000, Country: "Bulgaria", Ratio: 131.99 },
+            { Year: 2001, Country: "Bulgaria", Ratio: 118.71 },
+            { Year: 2002, Country: "Bulgaria", Ratio: 93.96 },
+            { Year: 2003, Country: "Bulgaria", Ratio: 98.39 },
+            { Year: 2004, Country: "Bulgaria", Ratio: 132.95 },
+            { Year: 2005, Country: "Bulgaria", Ratio: 163.46 },
+            { Year: 2006, Country: "Bulgaria", Ratio: 164.72 },
+            { Year: 2007, Country: "Bulgaria", Ratio: 189.34 },
+            { Year: 2008, Country: "Bulgaria", Ratio: 192.83 },
+            { Year: 2009, Country: "Bulgaria", Ratio: 148.71 },
+            { Year: 2010, Country: "Bulgaria", Ratio: 131.23 },
+            { Year: 2011, Country: "Bulgaria", Ratio: 113.04 },
+            { Year: 2012, Country: "Bulgaria", Ratio: 108.83 },
+            { Year: 2013, Country: "Bulgaria", Ratio: 102.71 },
+            { Year: 2014, Country: "Bulgaria", Ratio: 101.87 },
+            { Year: 2015, Country: "Bulgaria", Ratio: 100 },
+            { Year: 2016, Country: "Bulgaria", Ratio: 101.5 },
+            { Year: 2017, Country: "Bulgaria", Ratio: 101.65 },
+            { Year: 2018, Country: "Bulgaria", Ratio: 96.34 },
+            { Year: 2019, Country: "Bulgaria", Ratio: 95.78 },
+            { Year: 2020, Country: "Bulgaria", Ratio: 98.18 },
+            { Year: 2021, Country: "Bulgaria", Ratio: 95.34 },
+            { Year: 2022, Country: "Bulgaria", Ratio: 91.0 },
+            { Year: 2023, Country: "Bulgaria", Ratio: 86.6 },
+            { Year: 2024, Country: "Bulgaria", Ratio: 78.64 },
+            { Year: 2000, Country: "Cyprus", Ratio: 96.87 },
+            { Year: 2001, Country: "Cyprus", Ratio: 93.09 },
+            { Year: 2002, Country: "Cyprus", Ratio: 96.77 },
+            { Year: 2003, Country: "Cyprus", Ratio: 99.86 },
+            { Year: 2004, Country: "Cyprus", Ratio: 100.20 },
+            { Year: 2005, Country: "Cyprus", Ratio: 100.75 },
+            { Year: 2006, Country: "Cyprus", Ratio: 106.15 },
+            { Year: 2007, Country: "Cyprus", Ratio: 113.08 },
+            { Year: 2008, Country: "Cyprus", Ratio: 108.47 },
+            { Year: 2009, Country: "Cyprus", Ratio: 102.27 },
+            { Year: 2010, Country: "Cyprus", Ratio: 96.4 },
+            { Year: 2011, Country: "Cyprus", Ratio: 94.88 },
+            { Year: 2012, Country: "Cyprus", Ratio: 95.58 },
+            { Year: 2013, Country: "Cyprus", Ratio: 95.35 },
+            { Year: 2014, Country: "Cyprus", Ratio: 101.39 },
+            { Year: 2015, Country: "Cyprus", Ratio: 100 },
+            { Year: 2016, Country: "Cyprus", Ratio: 96.19 },
+            { Year: 2017, Country: "Cyprus", Ratio: 93.63 },
+            { Year: 2018, Country: "Cyprus", Ratio: 90.43 },
+            { Year: 2019, Country: "Cyprus", Ratio: 85.73 },
+            { Year: 2020, Country: "Cyprus", Ratio: 84.12 },
+            { Year: 2021, Country: "Cyprus", Ratio: 77.38 },
+            { Year: 2022, Country: "Cyprus", Ratio: 75.58 },
+            { Year: 2023, Country: "Cyprus", Ratio: 73.46 },
+            { Year: 2024, Country: "Cyprus", Ratio: 70.21 },
+            { Year: 2000, Country: "Czechia", Ratio: 90.68 },
+            { Year: 2001, Country: "Czechia", Ratio: 92.34 },
+            { Year: 2002, Country: "Czechia", Ratio: 98.03 },
+            { Year: 2003, Country: "Czechia", Ratio: 102.98 },
+            { Year: 2004, Country: "Czechia", Ratio: 98.01 },
+            { Year: 2005, Country: "Czechia", Ratio: 96.0 },
+            { Year: 2006, Country: "Czechia", Ratio: 96.49 },
+            { Year: 2007, Country: "Czechia", Ratio: 109.0 },
+            { Year: 2008, Country: "Czechia", Ratio: 114 },
+            { Year: 2009, Country: "Czechia", Ratio: 109.18 },
+            { Year: 2010, Country: "Czechia", Ratio: 104.45 },
+            { Year: 2011, Country: "Czechia", Ratio: 103.3 },
+            { Year: 2012, Country: "Czechia", Ratio: 100.66 },
+            { Year: 2013, Country: "Czechia", Ratio: 100.44 },
+            { Year: 2014, Country: "Czechia", Ratio: 99.08 },
+            { Year: 2015, Country: "Czechia", Ratio: 100 },
+            { Year: 2016, Country: "Czechia", Ratio: 103.13 },
+            { Year: 2017, Country: "Czechia", Ratio: 106.93 },
+            { Year: 2018, Country: "Czechia", Ratio: 107.94 },
+            { Year: 2019, Country: "Czechia", Ratio: 110.19 },
+            { Year: 2020, Country: "Czechia", Ratio: 112.36 },
+            { Year: 2021, Country: "Czechia", Ratio: 122.58 },
+            { Year: 2022, Country: "Czechia", Ratio: 131.3 },
+            { Year: 2023, Country: "Czechia", Ratio: 119.31 },
+            { Year: 2024, Country: "Czechia", Ratio: 119.4 },
+            { Year: 2000, Country: "Germany", Ratio: 120.25 },
+            { Year: 2001, Country: "Germany", Ratio: 115.56 },
+            { Year: 2002, Country: "Germany", Ratio: 112.67 },
+            { Year: 2003, Country: "Germany", Ratio: 110.11 },
+            { Year: 2004, Country: "Germany", Ratio: 106.68 },
+            { Year: 2005, Country: "Germany", Ratio: 105.58 },
+            { Year: 2006, Country: "Germany", Ratio: 102.51 },
+            { Year: 2007, Country: "Germany", Ratio: 97.81 },
+            { Year: 2008, Country: "Germany", Ratio: 96.46 },
+            { Year: 2009, Country: "Germany", Ratio: 96.43 },
+            { Year: 2010, Country: "Germany", Ratio: 94.99 },
+            { Year: 2011, Country: "Germany", Ratio: 95.26 },
+            { Year: 2012, Country: "Germany", Ratio: 96.52 },
+            { Year: 2013, Country: "Germany", Ratio: 97.65 },
+            { Year: 2014, Country: "Germany", Ratio: 97.94 },
+            { Year: 2015, Country: "Germany", Ratio: 100 },
+            { Year: 2016, Country: "Germany", Ratio: 104.57 },
+            { Year: 2017, Country: "Germany", Ratio: 107.41 },
+            { Year: 2018, Country: "Germany", Ratio: 110.35 },
+            { Year: 2019, Country: "Germany", Ratio: 113.26 },
+            { Year: 2020, Country: "Germany", Ratio: 120.07 },
+            { Year: 2021, Country: "Germany", Ratio: 128.4 },
+            { Year: 2022, Country: "Germany", Ratio: 125.95 },
+            { Year: 2023, Country: "Germany", Ratio: 110.21 },
+            { Year: 2024, Country: "Germany", Ratio: 104.25 },
+            { Year: 2000, Country: "Denmark", Ratio: 89.34 },
+            { Year: 2001, Country: "Denmark", Ratio: 89.57 },
+            { Year: 2002, Country: "Denmark", Ratio: 88.66 },
+            { Year: 2003, Country: "Denmark", Ratio: 88.58 },
+            { Year: 2004, Country: "Denmark", Ratio: 93.14 },
+            { Year: 2005, Country: "Denmark", Ratio: 106.09 },
+            { Year: 2006, Country: "Denmark", Ratio: 125.99 },
+            { Year: 2007, Country: "Denmark", Ratio: 127.58 },
+            { Year: 2008, Country: "Denmark", Ratio: 117.6 },
+            { Year: 2009, Country: "Denmark", Ratio: 99.63 },
+            { Year: 2010, Country: "Denmark", Ratio: 98.32 },
+            { Year: 2011, Country: "Denmark", Ratio: 94.49 },
+            { Year: 2012, Country: "Denmark", Ratio: 90.71 },
+            { Year: 2013, Country: "Denmark", Ratio: 93.81 },
+            { Year: 2014, Country: "Denmark", Ratio: 96.52 },
+            { Year: 2015, Country: "Denmark", Ratio: 100 },
+            { Year: 2016, Country: "Denmark", Ratio: 101.24 },
+            { Year: 2017, Country: "Denmark", Ratio: 103.98 },
+            { Year: 2018, Country: "Denmark", Ratio: 105.63 },
+            { Year: 2019, Country: "Denmark", Ratio: 105.92 },
+            { Year: 2020, Country: "Denmark", Ratio: 109.51 },
+            { Year: 2021, Country: "Denmark", Ratio: 117.79 },
+            { Year: 2022, Country: "Denmark", Ratio: 115.56 },
+            { Year: 2023, Country: "Denmark", Ratio: 106.98 },
+            { Year: 2024, Country: "Denmark", Ratio: 107.26 },
+            { Year: 2000, Country: "Spain", Ratio: 87.96 },
+            { Year: 2001, Country: "Spain", Ratio: 90.27 },
+            { Year: 2002, Country: "Spain", Ratio: 99.56 },
+            { Year: 2003, Country: "Spain", Ratio: 110.68 },
+            { Year: 2004, Country: "Spain", Ratio: 123.58 },
+            { Year: 2005, Country: "Spain", Ratio: 130.77 },
+            { Year: 2006, Country: "Spain", Ratio: 144.39 },
+            { Year: 2007, Country: "Spain", Ratio: 152.76 },
+            { Year: 2008, Country: "Spain", Ratio: 144.43 },
+            { Year: 2009, Country: "Spain", Ratio: 135.24 },
+            { Year: 2010, Country: "Spain", Ratio: 132.94 },
+            { Year: 2011, Country: "Spain", Ratio: 122.9 },
+            { Year: 2012, Country: "Spain", Ratio: 110.78 },
+            { Year: 2013, Country: "Spain", Ratio: 100.9 },
+            { Year: 2014, Country: "Spain", Ratio: 100.73 },
+            { Year: 2015, Country: "Spain", Ratio: 100 },
+            { Year: 2016, Country: "Spain", Ratio: 102.06 },
+            { Year: 2017, Country: "Spain", Ratio: 105.37 },
+            { Year: 2018, Country: "Spain", Ratio: 109.56 },
+            { Year: 2019, Country: "Spain", Ratio: 110.6 },
+            { Year: 2020, Country: "Spain", Ratio: 114.73 },
+            { Year: 2021, Country: "Spain", Ratio: 113.07 },
+            { Year: 2022, Country: "Spain", Ratio: 116.41 },
+            { Year: 2023, Country: "Spain", Ratio: 111.91 },
+            { Year: 2024, Country: "Spain", Ratio: 114.49 },
+            { Year: 2000, Country: "Finland", Ratio: 99.07 },
+            { Year: 2001, Country: "Finland", Ratio: 93.65 },
+            { Year: 2002, Country: "Finland", Ratio: 95.11 },
+            { Year: 2003, Country: "Finland", Ratio: 96.54 },
+            { Year: 2004, Country: "Finland", Ratio: 99.41 },
+            { Year: 2005, Country: "Finland", Ratio: 104.55 },
+            { Year: 2006, Country: "Finland", Ratio: 107.81 },
+            { Year: 2007, Country: "Finland", Ratio: 108.31 },
+            { Year: 2008, Country: "Finland", Ratio: 103.2 },
+            { Year: 2009, Country: "Finland", Ratio: 102.19 },
+            { Year: 2010, Country: "Finland", Ratio: 104.74 },
+            { Year: 2011, Country: "Finland", Ratio: 103.89 },
+            { Year: 2012, Country: "Finland", Ratio: 103.52 },
+            { Year: 2013, Country: "Finland", Ratio: 102.95 },
+            { Year: 2014, Country: "Finland", Ratio: 101.86 },
+            { Year: 2015, Country: "Finland", Ratio: 100 },
+            { Year: 2016, Country: "Finland", Ratio: 100.07 },
+            { Year: 2017, Country: "Finland", Ratio: 99.47 },
+            { Year: 2018, Country: "Finland", Ratio: 97.17 },
+            { Year: 2019, Country: "Finland", Ratio: 94.21 },
+            { Year: 2020, Country: "Finland", Ratio: 94.63 },
+            { Year: 2021, Country: "Finland", Ratio: 95.51 },
+            { Year: 2022, Country: "Finland", Ratio: 92.69 },
+            { Year: 2023, Country: "Finland", Ratio: 81.1 },
+            { Year: 2024, Country: "Finland", Ratio: 77.21 },
+            { Year: 2000, Country: "France", Ratio: 69.12 },
+            { Year: 2001, Country: "France", Ratio: 71.44 },
+            { Year: 2002, Country: "France", Ratio: 74.61 },
+            { Year: 2003, Country: "France", Ratio: 81.39 },
+            { Year: 2004, Country: "France", Ratio: 90.6 },
+            { Year: 2005, Country: "France", Ratio: 101.38 },
+            { Year: 2006, Country: "France", Ratio: 108.45 },
+            { Year: 2007, Country: "France", Ratio: 110.6 },
+            { Year: 2008, Country: "France", Ratio: 108.64 },
+            { Year: 2009, Country: "France", Ratio: 101.6 },
+            { Year: 2010, Country: "France", Ratio: 103.88 },
+            { Year: 2011, Country: "France", Ratio: 108.07 },
+            { Year: 2012, Country: "France", Ratio: 106.57 },
+            { Year: 2013, Country: "France", Ratio: 104.95 },
+            { Year: 2014, Country: "France", Ratio: 102.19 },
+            { Year: 2015, Country: "France", Ratio: 100 },
+            { Year: 2016, Country: "France", Ratio: 99.73 },
+            { Year: 2017, Country: "France", Ratio: 100.65 },
+            { Year: 2018, Country: "France", Ratio: 101.55 },
+            { Year: 2019, Country: "France", Ratio: 102.24 },
+            { Year: 2020, Country: "France", Ratio: 106.38 },
+            { Year: 2021, Country: "France", Ratio: 107.62 },
+            { Year: 2022, Country: "France", Ratio: 109.38 },
+            { Year: 2023, Country: "France", Ratio: 101.83 },
+            { Year: 2024, Country: "France", Ratio: 94.01 },
+            { Year: 2000, Country: "Hungary", Ratio: 122.21 },
+            { Year: 2001, Country: "Hungary", Ratio: 126.63 },
+            { Year: 2002, Country: "Hungary", Ratio: 129.21 },
+            { Year: 2003, Country: "Hungary", Ratio: 137.47 },
+            { Year: 2004, Country: "Hungary", Ratio: 132.90 },
+            { Year: 2005, Country: "Hungary", Ratio: 126.24 },
+            { Year: 2006, Country: "Hungary", Ratio: 124.98 },
+            { Year: 2007, Country: "Hungary", Ratio: 131.47 },
+            { Year: 2008, Country: "Hungary", Ratio: 129.43 },
+            { Year: 2009, Country: "Hungary", Ratio: 122.7 },
+            { Year: 2010, Country: "Hungary", Ratio: 116.31 },
+            { Year: 2011, Country: "Hungary", Ratio: 105.66 },
+            { Year: 2012, Country: "Hungary", Ratio: 99.54 },
+            { Year: 2013, Country: "Hungary", Ratio: 93.74 },
+            { Year: 2014, Country: "Hungary", Ratio: 92.94 },
+            { Year: 2015, Country: "Hungary", Ratio: 100 },
+            { Year: 2016, Country: "Hungary", Ratio: 107.13 },
+            { Year: 2017, Country: "Hungary", Ratio: 109.53 },
+            { Year: 2018, Country: "Hungary", Ratio: 112.7 },
+            { Year: 2019, Country: "Hungary", Ratio: 119 },
+            { Year: 2020, Country: "Hungary", Ratio: 119.89 },
+            { Year: 2021, Country: "Hungary", Ratio: 121.98 },
+            { Year: 2022, Country: "Hungary", Ratio: 125.54 },
+            { Year: 2023, Country: "Hungary", Ratio: 114.38 },
+            { Year: 2024, Country: "Hungary", Ratio: 116.65 },
+            { Year: 2000, Country: "Ireland", Ratio: 123.76 },
+            { Year: 2001, Country: "Ireland", Ratio: 125.39 },
+            { Year: 2002, Country: "Ireland", Ratio: 122.35 },
+            { Year: 2003, Country: "Ireland", Ratio: 131.36 },
+            { Year: 2004, Country: "Ireland", Ratio: 137.87 },
+            { Year: 2005, Country: "Ireland", Ratio: 140.7 },
+            { Year: 2006, Country: "Ireland", Ratio: 153.93 },
+            { Year: 2007, Country: "Ireland", Ratio: 157.01 },
+            { Year: 2008, Country: "Ireland", Ratio: 140.69 },
+            { Year: 2009, Country: "Ireland", Ratio: 122.41 },
+            { Year: 2010, Country: "Ireland", Ratio: 110.76 },
+            { Year: 2011, Country: "Ireland", Ratio: 92.75 },
+            { Year: 2012, Country: "Ireland", Ratio: 79.28 },
+            { Year: 2013, Country: "Ireland", Ratio: 80.98 },
+            { Year: 2014, Country: "Ireland", Ratio: 93.5 },
+            { Year: 2015, Country: "Ireland", Ratio: 100 },
+            { Year: 2016, Country: "Ireland", Ratio: 103.67 },
+            { Year: 2017, Country: "Ireland", Ratio: 109.42 },
+            { Year: 2018, Country: "Ireland", Ratio: 116.77 },
+            { Year: 2019, Country: "Ireland", Ratio: 113 },
+            { Year: 2020, Country: "Ireland", Ratio: 108.62 },
+            { Year: 2021, Country: "Ireland", Ratio: 112.27 },
+            { Year: 2022, Country: "Ireland", Ratio: 119.11 },
+            { Year: 2023, Country: "Ireland", Ratio: 111.98 },
+            { Year: 2024, Country: "Ireland", Ratio: 113.77 },
+            { Year: 2000, Country: "Italy", Ratio: 90.08 },
+            { Year: 2001, Country: "Italy", Ratio: 90.78 },
+            { Year: 2002, Country: "Italy", Ratio: 97.64 },
+            { Year: 2003, Country: "Italy", Ratio: 100.46 },
+            { Year: 2004, Country: "Italy", Ratio: 103.34 },
+            { Year: 2005, Country: "Italy", Ratio: 107.86 },
+            { Year: 2006, Country: "Italy", Ratio: 110.45 },
+            { Year: 2007, Country: "Italy", Ratio: 112.91 },
+            { Year: 2008, Country: "Italy", Ratio: 114.63 },
+            { Year: 2009, Country: "Italy", Ratio: 116.62 },
+            { Year: 2010, Country: "Italy", Ratio: 118.59 },
+            { Year: 2011, Country: "Italy", Ratio: 118.37 },
+            { Year: 2012, Country: "Italy", Ratio: 118.95 },
+            { Year: 2013, Country: "Italy", Ratio: 111.25 },
+            { Year: 2014, Country: "Italy", Ratio: 105.29 },
+            { Year: 2015, Country: "Italy", Ratio: 100 },
+            { Year: 2016, Country: "Italy", Ratio: 98.85 },
+            { Year: 2017, Country: "Italy", Ratio: 95.58 },
+            { Year: 2018, Country: "Italy", Ratio: 93.43 },
+            { Year: 2019, Country: "Italy", Ratio: 92.47 },
+            { Year: 2020, Country: "Italy", Ratio: 95.24 },
+            { Year: 2021, Country: "Italy", Ratio: 92.47 },
+            { Year: 2022, Country: "Italy", Ratio: 90.19 },
+            { Year: 2023, Country: "Italy", Ratio: 86.88 },
+            { Year: 2024, Country: "Italy", Ratio: 86.99 },
+            { Year: 2000, Country: "Netherlands", Ratio: 120.92 },
+            { Year: 2001, Country: "Netherlands", Ratio: 121.80 },
+            { Year: 2002, Country: "Netherlands", Ratio: 124.23 },
+            { Year: 2003, Country: "Netherlands", Ratio: 125.02 },
+            { Year: 2004, Country: "Netherlands", Ratio: 127.95 },
+            { Year: 2005, Country: "Netherlands", Ratio: 132.17 },
+            { Year: 2006, Country: "Netherlands", Ratio: 129.21 },
+            { Year: 2007, Country: "Netherlands", Ratio: 130.02 },
+            { Year: 2008, Country: "Netherlands", Ratio: 128.45 },
+            { Year: 2009, Country: "Netherlands", Ratio: 121.16 },
+            { Year: 2010, Country: "Netherlands", Ratio: 117.22 },
+            { Year: 2011, Country: "Netherlands", Ratio: 113.45 },
+            { Year: 2012, Country: "Netherlands", Ratio: 105.75 },
+            { Year: 2013, Country: "Netherlands", Ratio: 99.41 },
+            { Year: 2014, Country: "Netherlands", Ratio: 98.27 },
+            { Year: 2015, Country: "Netherlands", Ratio: 100 },
+            { Year: 2016, Country: "Netherlands", Ratio: 102.88 },
+            { Year: 2017, Country: "Netherlands", Ratio: 108.7 },
+            { Year: 2018, Country: "Netherlands", Ratio: 113.44 },
+            { Year: 2019, Country: "Netherlands", Ratio: 116.07 },
+            { Year: 2020, Country: "Netherlands", Ratio: 121.26 },
+            { Year: 2021, Country: "Netherlands", Ratio: 130.66 },
+            { Year: 2022, Country: "Netherlands", Ratio: 138.47 },
+            { Year: 2023, Country: "Netherlands", Ratio: 126.39 },
+            { Year: 2024, Country: "Netherlands", Ratio: 129.33 },
+            { Year: 2000, Country: "Portugal", Ratio: 121.00 },
+            { Year: 2001, Country: "Portugal", Ratio: 121.59 },
+            { Year: 2002, Country: "Portugal", Ratio: 117.07 },
+            { Year: 2003, Country: "Portugal", Ratio: 115.41 },
+            { Year: 2004, Country: "Portugal", Ratio: 112.21 },
+            { Year: 2005, Country: "Portugal", Ratio: 113.92 },
+            { Year: 2006, Country: "Portugal", Ratio: 113.25 },
+            { Year: 2007, Country: "Portugal", Ratio: 110.17 },
+            { Year: 2008, Country: "Portugal", Ratio: 107.06 },
+            { Year: 2009, Country: "Portugal", Ratio: 104.9 },
+            { Year: 2010, Country: "Portugal", Ratio: 104.73 },
+            { Year: 2011, Country: "Portugal", Ratio: 102.77 },
+            { Year: 2012, Country: "Portugal", Ratio: 98.72 },
+            { Year: 2013, Country: "Portugal", Ratio: 96.93 },
+            { Year: 2014, Country: "Portugal", Ratio: 100.84 },
+            { Year: 2015, Country: "Portugal", Ratio: 100 },
+            { Year: 2016, Country: "Portugal", Ratio: 103.51 },
+            { Year: 2017, Country: "Portugal", Ratio: 109.86 },
+            { Year: 2018, Country: "Portugal", Ratio: 115.67 },
+            { Year: 2019, Country: "Portugal", Ratio: 121.65 },
+            { Year: 2020, Country: "Portugal", Ratio: 133.01 },
+            { Year: 2021, Country: "Portugal", Ratio: 137.28 },
+            { Year: 2022, Country: "Portugal", Ratio: 143.19 },
+            { Year: 2023, Country: "Portugal", Ratio: 144.2 },
+            { Year: 2024, Country: "Portugal", Ratio: 144.24 },
+            { Year: 2000, Country: "Romania", Ratio: 62.48 },
+            { Year: 2001, Country: "Romania", Ratio: 62.97 },
+            { Year: 2002, Country: "Romania", Ratio: 63.14 },
+            { Year: 2003, Country: "Romania", Ratio: 65.23 },
+            { Year: 2004, Country: "Romania", Ratio: 70.10 },
+            { Year: 2005, Country: "Romania", Ratio: 74.4 },
+            { Year: 2006, Country: "Romania", Ratio: 79.46 },
+            { Year: 2007, Country: "Romania", Ratio: 84.33 },
+            { Year: 2008, Country: "Romania", Ratio: 81.22 },
+            { Year: 2009, Country: "Romania", Ratio: 81.57 },
+            { Year: 2010, Country: "Romania", Ratio: 85.4 },
+            { Year: 2011, Country: "Romania", Ratio: 84.42 },
+            { Year: 2012, Country: "Romania", Ratio: 82.61 },
+            { Year: 2013, Country: "Romania", Ratio: 85.32 },
+            { Year: 2014, Country: "Romania", Ratio: 91.07 },
+            { Year: 2015, Country: "Romania", Ratio: 100 },
+            { Year: 2016, Country: "Romania", Ratio: 104.1 },
+            { Year: 2017, Country: "Romania", Ratio: 108.35 },
+            { Year: 2018, Country: "Romania", Ratio: 104.2 },
+            { Year: 2019, Country: "Romania", Ratio: 103.81 },
+            { Year: 2020, Country: "Romania", Ratio: 107.66 },
+            { Year: 2021, Country: "Romania", Ratio: 112.12 },
+            { Year: 2022, Country: "Romania", Ratio: 109.64 },
+            { Year: 2023, Country: "Romania", Ratio: 98.42 },
+            { Year: 2024, Country: "Romania", Ratio: 95.35 },
+            { Year: 2000, Country: "Sweden", Ratio: 56.80 },
+            { Year: 2001, Country: "Sweden", Ratio: 61.32 },
+            { Year: 2002, Country: "Sweden", Ratio: 61.92 },
+            { Year: 2003, Country: "Sweden", Ratio: 67.24 },
+            { Year: 2004, Country: "Sweden", Ratio: 74.67 },
+            { Year: 2005, Country: "Sweden", Ratio: 89.80 },
+            { Year: 2006, Country: "Sweden", Ratio: 91.67 },
+            { Year: 2007, Country: "Sweden", Ratio: 90.24 },
+            { Year: 2008, Country: "Sweden", Ratio: 89.74 },
+            { Year: 2009, Country: "Sweden", Ratio: 86.64 },
+            { Year: 2010, Country: "Sweden", Ratio: 89.15 },
+            { Year: 2011, Country: "Sweden", Ratio: 89.91 },
+            { Year: 2012, Country: "Sweden", Ratio: 90.88 },
+            { Year: 2013, Country: "Sweden", Ratio: 91.85 },
+            { Year: 2014, Country: "Sweden", Ratio: 94.83 },
+            { Year: 2015, Country: "Sweden", Ratio: 100 },
+            { Year: 2016, Country: "Sweden", Ratio: 106.13 },
+            { Year: 2017, Country: "Sweden", Ratio: 107.23 },
+            { Year: 2018, Country: "Sweden", Ratio: 111.37 },
+            { Year: 2019, Country: "Sweden", Ratio: 118.01 },
+            { Year: 2020, Country: "Sweden", Ratio: 126.79 },
+            { Year: 2021, Country: "Sweden", Ratio: 142.4 },
+            { Year: 2022, Country: "Sweden", Ratio: 148.82 },
+            { Year: 2023, Country: "Sweden", Ratio: 128.01 },
+            { Year: 2024, Country: "Sweden", Ratio: 116.12 }
+         ];
+ 
+         const priceIncomeSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "Price-to-Income Ratio Trends (2000–2024)",
+            "data": { "values": priceIncomeData },
+            "mark": { "type": "line", "point": true, "tooltip": true },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "ordinal",
+                    "title": "Year",
+                    "axis": { "labelAngle": -45, "labelColor": "#fff", "titleColor": "#00d4ff" }
+                },
+                "y": {
+                    "field": "Ratio",
+                    "type": "quantitative",
+                    "title": "Price-to-Income Ratio",
+                    "axis": { "labelColor": "#fff", "titleColor": "#00d4ff" }
+                },
+                "color": {
+                    "field": "Country",
+                    "type": "nominal",
+                    "legend": { "title": "Country" }
+                },
+                "tooltip": [
+                    { "field": "Country", "type": "nominal", "title": "Country" },
+                    { "field": "Year", "type": "ordinal", "title": "Year" },
+                    { "field": "Ratio", "type": "quantitative", "title": "Ratio", "format": ".2f" }
+                ]
+            },
+            "title": "Price-to-Income Ratio by Country (2000–2024)",
+            "config": {
+                "background": "transparent",
+                "axis": { "gridColor": "#333", "domainColor": "#666", "labelColor": "#fff", "titleColor": "#00d4ff" },
+                "legend": { "labelColor": "#fff", "titleColor": "#00d4ff" },
+                "tooltip": { "theme": "dark" }
+            }
+        };
+
+        vegaEmbed('#price-income-chart', priceIncomeSpec, { actions: false, renderer: 'svg', theme: 'dark' }).catch(console.error);
     </script>
 </body>
 </html>
