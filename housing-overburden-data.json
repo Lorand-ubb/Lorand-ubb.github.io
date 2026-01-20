@@ -1,0 +1,758 @@
+[
+  {
+    "Year": 2010,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.0
+  },
+  {
+    "Year": 2010,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 8.8
+  },
+  {
+    "Year": 2010,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 26.2
+  },
+  {
+    "Year": 2010,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 10.7
+  },
+  {
+    "Year": 2010,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 16.7
+  },
+  {
+    "Year": 2010,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 33.1
+  },
+  {
+    "Year": 2010,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 16.3
+  },
+  {
+    "Year": 2010,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 9.2
+  },
+  {
+    "Year": 2010,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 0.0
+  },
+  {
+    "Year": 2011,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.4
+  },
+  {
+    "Year": 2011,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 9.1
+  },
+  {
+    "Year": 2011,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 27.2
+  },
+  {
+    "Year": 2011,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 12.3
+  },
+  {
+    "Year": 2011,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 20.3
+  },
+  {
+    "Year": 2011,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 28.1
+  },
+  {
+    "Year": 2011,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 14.8
+  },
+  {
+    "Year": 2011,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 9.2
+  },
+  {
+    "Year": 2011,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 43.4
+  },
+  {
+    "Year": 2012,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.5
+  },
+  {
+    "Year": 2012,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 8.7
+  },
+  {
+    "Year": 2012,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 27.0
+  },
+  {
+    "Year": 2012,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 12.9
+  },
+  {
+    "Year": 2012,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 22.2
+  },
+  {
+    "Year": 2012,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 33.3
+  },
+  {
+    "Year": 2012,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 15.6
+  },
+  {
+    "Year": 2012,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 8.8
+  },
+  {
+    "Year": 2012,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 43.5
+  },
+  {
+    "Year": 2013,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.4
+  },
+  {
+    "Year": 2013,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 8.0
+  },
+  {
+    "Year": 2013,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 27.5
+  },
+  {
+    "Year": 2013,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 12.5
+  },
+  {
+    "Year": 2013,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 22.0
+  },
+  {
+    "Year": 2013,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 28.8
+  },
+  {
+    "Year": 2013,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 16.4
+  },
+  {
+    "Year": 2013,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 10.7
+  },
+  {
+    "Year": 2013,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 53.6
+  },
+  {
+    "Year": 2014,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.6
+  },
+  {
+    "Year": 2014,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 7.7
+  },
+  {
+    "Year": 2014,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 27.6
+  },
+  {
+    "Year": 2014,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 14.2
+  },
+  {
+    "Year": 2014,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 26.3
+  },
+  {
+    "Year": 2014,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 34.0
+  },
+  {
+    "Year": 2014,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 16.6
+  },
+  {
+    "Year": 2014,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 8.9
+  },
+  {
+    "Year": 2014,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 56.4
+  },
+  {
+    "Year": 2015,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.3
+  },
+  {
+    "Year": 2015,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 7.0
+  },
+  {
+    "Year": 2015,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 26.8
+  },
+  {
+    "Year": 2015,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 13.9
+  },
+  {
+    "Year": 2015,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 24.5
+  },
+  {
+    "Year": 2015,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 30.6
+  },
+  {
+    "Year": 2015,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 15.9
+  },
+  {
+    "Year": 2015,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 7.3
+  },
+  {
+    "Year": 2015,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 47.9
+  },
+  {
+    "Year": 2016,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 10.2
+  },
+  {
+    "Year": 2016,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 6.3
+  },
+  {
+    "Year": 2016,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 26.6
+  },
+  {
+    "Year": 2016,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 11.4
+  },
+  {
+    "Year": 2016,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 17.5
+  },
+  {
+    "Year": 2016,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 30.1
+  },
+  {
+    "Year": 2016,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 14.4
+  },
+  {
+    "Year": 2016,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 6.7
+  },
+  {
+    "Year": 2016,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 53.6
+  },
+  {
+    "Year": 2017,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 9.5
+  },
+  {
+    "Year": 2017,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 5.4
+  },
+  {
+    "Year": 2017,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 25.5
+  },
+  {
+    "Year": 2017,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 10.1
+  },
+  {
+    "Year": 2017,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 11.8
+  },
+  {
+    "Year": 2017,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 43.1
+  },
+  {
+    "Year": 2017,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 12.3
+  },
+  {
+    "Year": 2017,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.9
+  },
+  {
+    "Year": 2017,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 53.6
+  },
+  {
+    "Year": 2018,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 9.3
+  },
+  {
+    "Year": 2018,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.7
+  },
+  {
+    "Year": 2018,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 25.1
+  },
+  {
+    "Year": 2018,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 4.8
+  },
+  {
+    "Year": 2018,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 6.4
+  },
+  {
+    "Year": 2018,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 20.2
+  },
+  {
+    "Year": 2018,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 10.3
+  },
+  {
+    "Year": 2018,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 3.7
+  },
+  {
+    "Year": 2018,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 46.3
+  },
+  {
+    "Year": 2019,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 8.7
+  },
+  {
+    "Year": 2019,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.1
+  },
+  {
+    "Year": 2019,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 24.1
+  },
+  {
+    "Year": 2019,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 3.6
+  },
+  {
+    "Year": 2019,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 3.6
+  },
+  {
+    "Year": 2019,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 16.5
+  },
+  {
+    "Year": 2019,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 9.7
+  },
+  {
+    "Year": 2019,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 3.0
+  },
+  {
+    "Year": 2019,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 39.5
+  },
+  {
+    "Year": 2020,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 8.6
+  },
+  {
+    "Year": 2020,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.0
+  },
+  {
+    "Year": 2020,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 23.3
+  },
+  {
+    "Year": 2020,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 4.1
+  },
+  {
+    "Year": 2020,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 1.4
+  },
+  {
+    "Year": 2020,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 46.3
+  },
+  {
+    "Year": 2020,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 9.1
+  },
+  {
+    "Year": 2020,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 3.4
+  },
+  {
+    "Year": 2020,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 32.7
+  },
+  {
+    "Year": 2021,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 8.3
+  },
+  {
+    "Year": 2021,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 3.7
+  },
+  {
+    "Year": 2021,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 21.3
+  },
+  {
+    "Year": 2021,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 2.5
+  },
+  {
+    "Year": 2021,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 0.8
+  },
+  {
+    "Year": 2021,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 27.6
+  },
+  {
+    "Year": 2021,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 9.9
+  },
+  {
+    "Year": 2021,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 1.9
+  },
+  {
+    "Year": 2021,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 32.1
+  },
+  {
+    "Year": 2022,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 8.7
+  },
+  {
+    "Year": 2022,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.1
+  },
+  {
+    "Year": 2022,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 21.0
+  },
+  {
+    "Year": 2022,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 8.4
+  },
+  {
+    "Year": 2022,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 4.3
+  },
+  {
+    "Year": 2022,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 36.3
+  },
+  {
+    "Year": 2022,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 10.7
+  },
+  {
+    "Year": 2022,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 2.4
+  },
+  {
+    "Year": 2022,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 38.3
+  },
+  {
+    "Year": 2023,
+    "Country": "EU Average",
+    "Type": "Total",
+    "Rate": 8.9
+  },
+  {
+    "Year": 2023,
+    "Country": "EU Average",
+    "Type": "Owner (Mortgage)",
+    "Rate": 5.7
+  },
+  {
+    "Year": 2023,
+    "Country": "EU Average",
+    "Type": "Tenant (Market Price)",
+    "Rate": 20.3
+  },
+  {
+    "Year": 2023,
+    "Country": "Hungary",
+    "Type": "Total",
+    "Rate": 8.4
+  },
+  {
+    "Year": 2023,
+    "Country": "Hungary",
+    "Type": "Owner (Mortgage)",
+    "Rate": 6.8
+  },
+  {
+    "Year": 2023,
+    "Country": "Hungary",
+    "Type": "Tenant (Market Price)",
+    "Rate": 31.0
+  },
+  {
+    "Year": 2023,
+    "Country": "Romania",
+    "Type": "Total",
+    "Rate": 10.6
+  },
+  {
+    "Year": 2023,
+    "Country": "Romania",
+    "Type": "Owner (Mortgage)",
+    "Rate": 5.2
+  },
+  {
+    "Year": 2023,
+    "Country": "Romania",
+    "Type": "Tenant (Market Price)",
+    "Rate": 24.5
+  }
+]
